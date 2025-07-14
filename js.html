@@ -1,5 +1,4 @@
-\
-//write code here 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,14 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo"></p>
     <script>
+        document.getElementById("demo").innerHTML = "Hello World!";
         console.log(5+6);
   	
-        let = x,y,z;
+        let x, y, z;
 	    x = 5;
 	    y = 6;
-	    z = a+b;
-	    console.log (z);
+	    z = a + b;
+        console.log(z);
+        
+        // Correcting the variable names
+        z = x + y;
+        console.log(z);
+        
+        // Displaying the result in the HTML element
+
+	    document.getElementById("demo").innerHTML = "The value of z is: " + z;
     </script>
     
 </body>
