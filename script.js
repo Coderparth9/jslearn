@@ -1,4 +1,4 @@
-// Functions and objects in JavaScript
+// Functions, objects, event, string in JavaScript
 
 //Functions
 console.log("hello");
@@ -175,3 +175,36 @@ let number3 = 123e-6,
     number4 = 123e2,
     number5 = 123e2;
 console.log("Exponential Notation: ", number3,number4, number5);
+//bigint in javascript
+
+let x = BigInt("999999999999999999999999999999999999999999");
+console.log(typeof x);
+let y = `999999999999999999999999999999999999999999`;
+console.log(typeof y);
+
+let z = 244;
+z.toString(); //convert to string
+console.log("in string ", z.toString());
+console.log(typeof z.toString()); 
+
+let i = 244;
+i.toString(2); //convert to binary
+console.log("binary", i.toString(2));
+console.log(typeof i.toString(2)); 
+
+
+let j = 244;
+j.toExponential(2); //convert to exponential
+console.log("exponential", j.toExponential(2));
+console.log(typeof j.toExponential(2)); //check type of exponential notation
+
+
+j.toFixed(8); //convert to fixed point notation
+console.log("fixed point", j.toFixed(8));
+console.log(typeof j.toFixed(8)); //check type of fixed point notation
+
+
+j.toPrecision(4); //convert to precision notation
+console.log("precision", j.toPrecision(4));
+console.log(typeof j.toPrecision(4)); //check type of precision notation
+
