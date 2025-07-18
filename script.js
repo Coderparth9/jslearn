@@ -90,3 +90,15 @@ let student = {
 };
 student.hello();
 student.Hey();
+
+function Student(name, age) {
+    this.name = name;
+    this.age = age;
+    this.intro = function() {
+        console.log("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
+    };
+}   
+let student1 = new Student("Parth", 20);
+let student2 = new Student("Dev", 21);
+student1.intro();
+student2.intro();
