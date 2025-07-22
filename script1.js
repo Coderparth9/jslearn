@@ -1,6 +1,6 @@
 //Js Number, Array, Dates;
 //Numbers Methods
-/*
+/* */
 let x = 10;
 
 x.valueOf(); // Returns the primitive value of the number
@@ -176,18 +176,18 @@ console.log("Math.trunc(5.9): " + Math.trunc(5.9)); // Output: 4 (removes decima
 console.log("Math.sign(0): " + Math.sign(0)); // Output: -1 (returns sign of number)
 console.log("Math.pow(2, 4): " + Math.pow(2, 4)); // Output: 8 (2 raised to the power of 3)
 
-let a = 10;
-console.log("Math.log(a): " + Math.log(a)); // Output: 2.302585092994046 (natural logarithm of 10)
-console.log("Math.log10(a): " + Math.log10(a)); // Output: 1 (base 10 logarithm of 10)
-console.log("Math.log2(a): " + Math.log2(a)); // Output: 3.321928094887362 (base 2 logarithm of 10)
+let c = 10;
+console.log("Math.log(a): " + Math.log(c)); // Output: 2.302585092994046 (natural logarithm of 10)
+console.log("Math.log10(a): " + Math.log10(c)); // Output: 1 (base 10 logarithm of 10)
+console.log("Math.log2(a): " + Math.log2(c)); // Output: 3.321928094887362 (base 2 logarithm of 10)
 
-let x = Math.floor(Math.random() * 100); // Generates a random integer between 0 and 99
-console.log("Random Integer: " + x); // Output: Random integer between 0 and 99
+let g = Math.floor(Math.random() * 100); // Generates a random integer between 0 and 99
+console.log("Random Integer: " + g); // Output: Random integer between 0 and 99
 
 //boolean in JavaScript
 let y = 10;
 console.log(y!=10);
-*/
+/* */
 
 //sets
 
