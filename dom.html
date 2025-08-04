@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body id="body" style="background-color: aquamarine;">
+    <button onclick="a1">click to change</button>
+    <script>
+        let a1 = document.getElementById("body");
+        a1.style.backgroundColor = "red";
+    </script>
+    <h2>DOM</h2>
+    <p id="demo">Hello</p>
+
+    <button
+      id="Click"
+      onclick="document.getElementById('demo').style.color = 'blue'"
+    >
+      Click To Change Color
+    </button>
+
+    <div class="Test">Hello DOM!</div>
+
+    <p class="intro">CSS Selectors</p>
+    <h2>The onclick Attribute</h2>
+
+    <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+
+    <p id="date"></p>
+
+    <button class="event">Display Date</button>
+
+    <script>
+      document.getElementById("demo").innerHTML = "Hello World!";
+    </script>
+    <!--nodes and childs-->
+    <script>
+      document.querySelector(".event").addEventListener("click", function () {
+        document.getElementById("date").innerHTML = Date();
+      });
+    </script>
+
+    <p id="parent">Parent</p>
+    <p id="child">Child</p>
+
+    <div id="div1">
+      <p id="p1">This is first paragraph or Parent</p>
+      <p id="p2">This is second paragraph or Child</p>
+    </div>
+    <script>
+      const para = document.createElement("p");
+      const node = document.createTextNode("This is new.");
+      const abc = para.appendChild(node);
+      console.log(abc);
+
+      const element = document.getElementById("div1");
+      element.appendChild(para);
+    </script>
+    <button id="changecolor">On click to change background color</button>
+    <script>
+        document.getElementById("changecolor").addEventListener("click", function () {
+            document.body.style.backgroundColor = "lightblue";
+        });
+    </script>
+    <script src="dom.js"></script>
+  </body>
+</html>
+
+
